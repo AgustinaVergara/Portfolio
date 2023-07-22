@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="./css/normalize.css" as="style" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Estilos CSS-->
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- API -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <!-- Librerías Animate CSS (para animaciones) y WOW (para combinar animaciones con scroll)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/c56cc79bcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--JQuery-->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <title>Portfolio - Agustina Vergara</title>
+  </head>
+  <body class="hidden">
+    <!--Loader-->
+    <div class="centrado" id="onload">
+      <div class="loader"></div>
+    </div>
+    <!-- Navegación -->
+    <div class="nav-bg" id="nav-bar">
+      <nav class="nav-ppal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#tech">Tecnologías</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#section-form">Contacto</a>
+      </nav>
+    </div>
+
+    <!-- Sección 1-->
+    <section class="sec-ppal" id="ppal">
+      
+      <div class="contenido-ppal">
+        <h1 class="animate__animated animate__fadeInDownBig animate__delay-1s">Agustina Vergara</h1>
+        <button class="boton animate__animated animate__zoomIn animate__delay-1s">
+          <a href="./CV/CV-AgustinaVergara.pdf" target="_blank">Descargar CV</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección 2: About -->
+    <section class="sec-about" id="about">
+      <div class="contenido-about">
+        <div class="image-box">
+          <img class="imagen-about wow fadeIn animate__delay-3s" src="./imagenes/fotoDePerfilCV.jpeg" alt="" />
+        </div>
+        
+        <div class="detail-about">
+          <h2 class="wow bounceInRight">HOLA!</h2>
+          <p class="wow slideInRight">
+            Me presento, soy <b>Agustina</b>, originaria de Viale, Entre Ríos. <br> Me resulta muy interesante la forma en que la tecnología influye en nuestra vida diaria, facilitando y mejorando diversos aspectos.
+            Es por esta razón que desde 2019, me encuentro residiendo en la ciudad de Santa Fe Capital, donde realizo mis estudios en Ingeniería en Sistemas en la Universidad Tecnológica Nacional.<br>
+            Me emociona estar cursando actualmente el cuarto año de mi carrera, adquiriendo nuevos conocimientos y enfrentando desafíos que me permiten crecer como futura profesional en el campo de la ingeniería.<br>
+            Recientemente, di un emocionante salto al mundo laboral como desarrolladora Fullstack, colaborando estrechamente con un equipo. Mi labor consiste en el diseño e implementación de requerimientos 
+            para un sistema web y una aplicación de escritorio de gestión comercial.
+          </p>
+          <h4 class="wow slideInRight">Objetivos</h4>
+          <p class="wow slideInRight">Hoy en día, mi enfoque principal radica en finalizar mis estudios y buscar oportunidades que me permitan poner en práctica mis conocimientos y habilidades,
+            impulsando así mi futuro como profesional. Soy una persona comprometida y dedicada a cada proyecto que emprendo, siempre buscando superar mis límites. Mi objetivo 
+            es encontrar oportunidades laborales que me permitan trabajar en equipo y continuar aprendiendo de manera constante, con el fin de crecer tanto a nivel 
+            personal como en mi desarrollo profesional.</p>
+          <h4 class="wow slideInRight">Características</h4>
+          <ul class="list wow slideInRight">
+            <li>Responsabilidad</li>
+            <li>Empatía</li>
+            <li>Adaptabilidad</li>
+            <li>Trabajo en equipo</li>
+            <li>Compromiso</li>
+            <li>Comunicación</li>
+          </ul>
+          <h4 class="wow slideInRight">Idiomas</h4>
+          <div class="wow slideInRight">
+            <ul class="language-list">
+              <li>Español - Nativo</li>
+              <li>Inglés - Nivel medio</li>
+            </ul>
+          </div>
+          <h4 class="wow slideInRight">Intereses</h4>
+            <p class="wow slideInRight">
+              En mi tiempo libre, me encanta pasar momentos especiales con amigos. Disfruto haciendo planes para salir, ya sea al parque,
+              tomar mates o simplemente reunirnos a comer. También valoro enormemente el tiempo que comparto con mi familia, compartiendo 
+              risas y anécdotas que hacen de esos momentos algo inolvidable. <br> Además, me gusta ver series y películas, 
+              escuchar música y cocinar!
+            </p>          
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 3: Technologies -->
+    <section class="sec-tech" id="tech">
+      <h2>Tecnologías</h2>
+      <p>Algunas de las tecnologías que he utilizado son: </p>
+      <div class="grid-layout">
+        <div class="caja wow animate__rotateIn">
+          <img
+            class="imagen-tech"
+            src="./imagenes/logo-html.png"
+            alt="Logo HTML 5"
+          />
+        </div>
+        <div class="caja wow animate__rotateIn">
+          <img
+            class="imagen-tech"
+            src="./imagenes/logo-css.png"
+            alt="Logo CSS 3"
+          />
+        </div>
+        <div class="caja wow animate__rotateIn">
+          <img
+            class="imagen-tech"
+            src="./imagenes/logo-javascript.png"
+            alt="Logo javascript"
+          />
+        </div>
+        <div class="caja wow animate__rotateIn">
+          <img
+            class="imagen-tech"
+            src="./imagenes/logoJava.png"
+            alt="Logo Java"
+          />
+        </div>
+        <div class="caja wow animate__rotateIn">
+          <img
+            class="imagen-tech"
+            src="./imagenes/logo-python.png"
+            alt="Logo python"
+          />
+        </div>
+        <div class="caja wow animate__rotateIn">
+          <img
+            class="imagen-tech"
+            src="./imagenes/logo-bootstrap.png"
+            alt="Logo bootstrap"
+          />
+        </div>
+        <div class="caja wow animate__rotateIn">
+          <img
+            class="imagen-tech"
+            src="./imagenes/logoVue.png"
+            alt="Logo VUE"
+          />
+        </div>
+        <div class="caja wow animate__rotateIn">
+          <img
+            class="imagen-tech"
+            src="./imagenes/logoCsharp.png"
+            alt="Logo C#"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor-certificados" id="cursos">
+      <h2 class="certificado-title">Cursos</h2>
+      <p>A lo largo de mi carrera he realizado algunos cursos para complementar mi formación</p>
+        <div class="contenedor-slider">
+          <div class="contenedor-items">
+              <input type="radio" name="slider" id="item-1" checked>
+              <input type="radio" name="slider" id="item-2">
+              <input type="radio" name="slider" id="item-3">
+              <input type="radio" name="slider" id="item-4">
+              <input type="radio" name="slider" id="item-5">
+            <div class="certificados">
+              <label class="certificado" for="item-1" id="selector-1">
+                <img src="imagenes/Certificado_diseñoWeb.jpg">
+              </label>
+              <label class="certificado" for="item-2" id="selector-2">
+                <img src="imagenes/diploma-python-fullstack_page-0001.jpg">
+              </label>
+              <label class="certificado" for="item-3" id="selector-3">
+                <img src="imagenes/diploma-vuejs2_page-0001.jpg">
+              </label>
+              <label class="certificado" for="item-4" id="selector-4">
+                <img src="imagenes/diploma-gitlab_page-0001.jpg">
+              </label>
+              <label class="certificado" for="item-5" id="selector-5">
+                <img src="imagenes/diploma-csharp_page-0001.jpg">
+              </label>
+            </div>
+        </div>
+      </div>   
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="section-form" id="section-form">
+      <div class="content">
+        <h2 class="title-form">Contáctame</h2>
+
+        <div class="contact-wrapper animated bounceInUp">
+          <div class="contact-form">
+            <h3>Completa el formulario</h3>
+            <form action="" class="formulario" id="formulario">
+
+              <div  class="group_form" id="group_fullname">
+                <p>
+                  <label for="fullname" class="form_label">Nombre y apellido </label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="text" name="fullname" id="name" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Maximo  30 caracteres. No se admiten simbolos</p>
+              </div>
+
+              <div  class="group_form" id="group_email">
+                <p>
+                  <label for="email" class="form_label">Correo</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="email" name="email" id="email" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> El correo no cumple con el formato</p>
+              </div>
+
+              <div  class="group_form" id="group_phone">
+                <p>
+                  <label for="phone" class="form_label">Teléfono</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="tel" name="phone" id="phone" required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Solo se admiten números</p>
+              </div>
+
+              <div  class="group_form" id="group_affair">
+                <p>
+                  <label for="affair" class="form_label">Asunto</label>
+                  <div class="group_form_input">
+                    <input class="form_input" type="text" name="affair" id="affair"required /> 
+                    <i class="icon_input fas fa-times-circle"></i>         
+                  </div>
+                </p>
+                <p class="error_message"><i class="fa-solid fa-circle-exclamation"></i> Ingrese un asunto entre 5 y 20 caracteres</p>
+              </div>
+
+              <p class="block">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" rows="3" required></textarea>
+              </p>
+              <p class="block">
+                <button type="submit">Envíar</button>
+              </p>
+            </form>
+
+            <a href="mailto:agusv369@gmail.com" id="send-mail"></a>
+          </div>
+
+          <div class="contact-info">
+            <h4>Más Información</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> Santa Fe, Argentina</li>
+              <li><i class="fas fa-phone"></i> (+54) 343 - 5076694</li>
+              <li>
+                <i class="fas fa-envelope-open-text"></i> agusv369@gmail.com
+              </li>
+            </ul>
+            <p>
+              Si te gustó mi perfil contáctame y responderé a la brevedad :)
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <div id="myMap"></div>
+    </section>
+
+    <!-- Sección 5:  -->
+    <footer class="footer">
+      
+      <div class="footer_icon">
+        <h4 class="footer_info">Sígueme en mis redes sociales</h4>
+        <div class="icon_container">
+          <a class="social_network_icon animate__animated animate__pulse animate__infinite infinite" href="https://ar.linkedin.com/"><i class="fa-brands fa-linkedin"></i></i></a>
+          <a class="social_network_icon animate__animated animate__pulse animate__infinite infinite" href="https://github.com/AgustinaVergara"><i class="fa-brands fa-github"></i></a>
+          <a class="social_network_icon animate__animated animate__pulse animate__infinite infinite" href="https://www.instagram.com/agussvergara_/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer_info">
+        <p>Portfolio web desarrollado por:</p>
+        <div class="dev">
+          <p>Agustina Vergara</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="go_up_btn" href="#nav-bar"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

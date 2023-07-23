@@ -12,7 +12,7 @@ function handleSubmit(e) {
 
   buttonMailTo.setAttribute(
     "href",
-    `mailto:nabihuzcateguip@gmail.com?subject=
+    `mailto:agusv369@gmail.com?subject=
         Mensaje enviado desde mi sitio web por: ${form.get("fullname")}
         Correo: ${form.get("email")}
         &body=
